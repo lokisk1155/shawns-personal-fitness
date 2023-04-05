@@ -1,4 +1,2 @@
 # [Shawns Personal Fitness](https://www.shawnspersonalfitness.com/)
-Shawn’s Personal Fitness programs are designed to dramatically improve your function and enhance your muscle balance and flexibility. We recommend that sessions always include strength and endurance training to maximize calorie burn.   
-
 Every body is different. And everybody has different fitness goals. That’s why Shawn’s Personal Fitness doesn’t give you a “one program fits all” plan. Instead, our certified Personal Trainers will customize the workout program best for you. Whether you want to lose weight, get healthier, tone up, gain strength, or improve balance, you’ll get a program that’s effective, enjoyable, and designed for your specific needs. See what a difference personal training can make. Come to Shawn’s Personal Fitness for a free session where you can visit our state-of-the-art fitness facility and meet our expert staff.
