@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Link, HeadFC, PageProps } from "gatsby";
-import { headingStyles, pageStyles } from "./styles/404";
+import { headingStyles, pageStyles } from "../styles/404";
 
 const NotFoundPage: React.FC<PageProps> = () => {
   return (
