@@ -1,4 +1,4 @@
-# [Shawns Personal Fitness](https://www.shawnspersonalfitness.com/)
+# [Shawns Personal Fitness](https://lokisk1155.github.io/shawns-personal-fitness/)
 
 <img width="100%" alt="Screen Shot 2023-04-05 at 2 37 54 PM" src="https://user-images.githubusercontent.com/95663040/230174195-cfddec59-15ce-4277-a8d7-50cbf3a65476.png">
 
