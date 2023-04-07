@@ -1,9 +1,9 @@
 import * as React from "react";
-import { MainLinks } from "../constants/mainLinks";
-import { mainLinksHeaderContainer } from "../styles/Header";
+import { MainLinks } from "../../constants/mainLinks";
+import { mainLinksHeaderContainer } from "../../styles/Header";
 import { Link } from "gatsby";
 
-const Header: React.FC = () => {
+const NavLinks: React.FC = () => {
   return (
     <nav style={mainLinksHeaderContainer}>
       {MainLinks.map((link) => (
@@ -15,4 +15,4 @@ const Header: React.FC = () => {
   );
 };
 
-export default Header;
+export default NavLinks;
