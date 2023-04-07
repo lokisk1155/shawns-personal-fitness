@@ -4,9 +4,11 @@ import { headingStyles, pageStyles } from "../styles/404";
 
 const NotFoundPage: React.FC<PageProps> = () => {
   useEffect(() => {
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       navigate("/");
-    }, 2000);
+    }, 1500);
+
+    return () => clearTimeout(timeoutId);
   }, []);
 
   return (
