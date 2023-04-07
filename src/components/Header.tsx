@@ -1,6 +1,6 @@
 import * as React from "react";
 import { MainLinks } from "../constants/mainLinks";
-import { mainLinksHeaderContainer } from "../styles/mainLinksHeaderContainer";
+import { mainLinksHeaderContainer } from "../styles/Header";
 import { Link } from "gatsby";
 
 const Header: React.FC = () => {
