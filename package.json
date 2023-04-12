@@ -9,7 +9,6 @@
   ],
   "scripts": {
     "deploy": "gatsby build --prefix-paths && gh-pages -d public --repo https://github.com/lokisk1155/shawns-personal-fitness.git --user 'lokisk1155 <shawn12345d@gmail.com>'",
-
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
