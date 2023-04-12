@@ -38,4 +38,4 @@ jobs:
         with:
           access-token: ${{ secrets.DEPLOY_TOKEN }}
           deploy-branch: gh-pages
-          publish-dir: ./public
+          gatsby-args: --prefix-paths
