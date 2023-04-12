@@ -1,6 +1,5 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
-
 name: Node.js CI
 
 on:
@@ -27,9 +26,8 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npx prettier --check .
-      - run: npm run build --if-present
       - name: Configure Git user
-      - run: |
+        run: |
           git config --local user.email "shawn12345d@gmail.com"
           git config --local user.name "lokisk1155"
       - run: npm run deploy
