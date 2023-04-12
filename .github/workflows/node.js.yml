@@ -27,5 +27,3 @@ jobs:
       - run: npm ci
       - run: npx prettier --check .
       - run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
