@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "deploy": "git config user.email 'shawn12345d@gmail.com' && git config user.name 'Lokisk1155' && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
