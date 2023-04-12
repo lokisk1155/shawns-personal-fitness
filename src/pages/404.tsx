@@ -17,7 +17,7 @@ const NotFoundPage: React.FC<PageProps> = () => {
       <IndexNav />
       <main style={pageStyles}>
         <h1 style={headingStyles}>Page not found</h1>
-        <p>Sorry 😔, we couldn’t find what you were looking for.</p>
+        <p>Sorry 😔, we couldn’t find what you were looking for</p>
       </main>
     </>
   );
