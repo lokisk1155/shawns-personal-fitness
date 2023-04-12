@@ -1,13 +1,13 @@
 import * as React from "react";
 import { MainLinks } from "../../constants/mainLinks";
-import { mainLinksHeaderContainer } from "../../styles/Header";
+import { mainLinksHeaderContainer, mainLink } from "../../styles/Header";
 import { Link } from "gatsby";
 
 const NavLinks: React.FC = () => {
   return (
     <nav style={mainLinksHeaderContainer}>
       {MainLinks.map((link) => (
-        <Link to={link.linkTo} key={link.name}>
+        <Link style={mainLink} to={link.linkTo} key={link.name}>
           <p>{link.name}</p>
         </Link>
       ))}
