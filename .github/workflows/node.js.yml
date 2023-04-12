@@ -29,9 +29,6 @@ jobs:
       - run: npx prettier --check .
       - run: npm run build --if-present
       - run: npm run deploy
-      - run: |
-          git config --global user.email "github-actions@example.com"
-          git config --global user.name "GitHub Actions"
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
