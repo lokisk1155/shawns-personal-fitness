@@ -8,7 +8,7 @@
     "gatsby"
   ],
   "scripts": {
-    "deploy": "git config user.email 'shawn12345d@gmail.com' && git config user.name 'lokisk1155' && gatsby build --prefix-paths && git add . && git commit -m 'deploy' && git push origin HEAD:gh-pages",
+    "deploy": "git config user.email 'shawn12345d@gmail.com' && git config user.name 'lokisk1155' && gatsby build --prefix-paths && git add . && git commit -m 'deploy' && git remote set-url origin https://github.com/lokisk1155/shawns-personal-fitness.git && git push origin HEAD:gh-pages",
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
