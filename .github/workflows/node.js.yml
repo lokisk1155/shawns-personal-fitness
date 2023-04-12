@@ -26,10 +26,10 @@ jobs:
           cache: "npm"
       - run: npm ci
       - run: npx prettier --check .
-      - name: Configure Git user
-        run: |
-          git config --local user.email "shawn12345d@gmail.com"
-          git config --local user.name "lokisk1155"
+      - name: Configure Git email
+        run: git config --local user.email "shawn12345d@gmail.com"
+      - name: Configure Git name
+        run: git config --local user.name "lokisk1155"
       - run: npm run deploy
       - name: Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
