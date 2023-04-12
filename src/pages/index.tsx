@@ -1,17 +1,9 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
-import NavLinks from "../components/Header/index";
-import useMediaQuery from "../utils/useMediaQuery";
-import MobileNav from "../components/Header/MobileNav";
+import IndexNav from "../components/Navigation";
 
 const IndexPage: React.FC<PageProps> = () => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
-
-  if (isAboveMediumScreens) {
-    return <NavLinks />;
-  } else {
-    return <MobileNav />;
-  }
+  return <IndexNav />;
 };
 
 export default IndexPage;
