@@ -31,9 +31,5 @@ jobs:
       - name: Configure Git name
         run: git config --local user.name "lokisk1155"
       - run: npm run deploy
-      - name: Deploy to GitHub Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.DEPLOY_TOKEN }}
-          publish_dir: ./public
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
