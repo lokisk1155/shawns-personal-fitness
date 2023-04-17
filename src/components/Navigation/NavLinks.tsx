@@ -12,16 +12,13 @@ const NavLinks: React.FC = () => {
   return (
     <>
       <header style={celebrationBannerHeader}>
-        <h1 style={celebrationText}>25 years of Shawn's Personal Fitness</h1>
+        <h1 style={celebrationText}>
+          Celebrating 25 years of Shawn's Personal Fitness
+        </h1>
       </header>
       <nav style={mainLinksHeaderContainer}>
         {MainLinks.map((link) => (
-          <Link
-            className="nav-link"
-            style={mainLink}
-            to={link.linkTo}
-            key={link.name}
-          >
+          <Link style={mainLink} to={link.linkTo} key={link.name}>
             <p>{link.name}</p>
           </Link>
         ))}

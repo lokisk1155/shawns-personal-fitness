@@ -1,16 +1,14 @@
 import * as React from "react";
-import NavLinks from "./NavLinks";
 import useMediaQuery from "../../utils/useMediaQuery";
-import MobileNav from "./MobileNav";
 
-const Navigation: React.FC = () => {
+const Home: React.FC = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   if (isAboveMediumScreens) {
-    return <NavLinks />;
+    return <></>;
   } else {
-    return <MobileNav />;
+    return <></>;
   }
 };
 
-export default Navigation;
+export default Home;

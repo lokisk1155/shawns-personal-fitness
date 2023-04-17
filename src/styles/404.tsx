@@ -1,20 +1,6 @@
-interface PageStyles {
-  color: string;
-  padding: string;
-  fontFamily: string;
-  display: string;
-  justifyContent: string;
-  alignItems: string;
-  flexDirection: string;
-}
+import { CSSProperties } from "react";
 
-interface HeadingStyles {
-  marginTop: number;
-  marginBottom: number;
-  maxWidth: number | string;
-}
-
-export const pageStyles: PageStyles = {
+export const pageStyles: CSSProperties = {
   color: "#232129",
   padding: "96px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
@@ -24,7 +10,7 @@ export const pageStyles: PageStyles = {
   flexDirection: "column",
 };
 
-export const headingStyles: HeadingStyles = {
+export const headingStyles: CSSProperties = {
   marginTop: 0,
   marginBottom: 64,
   maxWidth: 320,

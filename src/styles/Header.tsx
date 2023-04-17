@@ -16,7 +16,7 @@ export const mainLink: CSSProperties = {
   fontSize: "1.25rem",
   color: "inherit",
   border: "0.15px solid #fff",
-  backgroundColor: "#ffF",
+  backgroundColor: "#fff",
 };
 
 export const celebrationBannerHeader: CSSProperties = {

@@ -1,13 +1,14 @@
 import React, { useState } from "react";
-import type { PageProps } from "gatsby";
+import MobileOpen from "./MobileOpen";
+import MobileClosed from "./MobileClosed";
 
-const MobileNav: React.FC<PageProps> = () => {
-  const [navOpen, setNavOpen] = useState(null);
+const MobileNav: React.FC = () => {
+  const [navOpen, setNavOpen] = useState(false);
 
   if (navOpen) {
-    return <></>;
+    return <MobileOpen closeNav={() => setNavOpen(false)} />;
   } else {
-    return <></>;
+    return <MobileClosed openNav={() => setNavOpen(true)} />;
   }
 };
 
