@@ -1,9 +1,13 @@
 import * as React from "react";
 import type { HeadFC, PageProps } from "gatsby";
-import IndexNav from "../components/Navigation";
+import Navigation from "../components/Navigation/indexNav";
 
 const IndexPage: React.FC<PageProps> = () => {
-  return <IndexNav />;
+  return (
+    <>
+      <Navigation />;
+    </>
+  );
 };
 
 export default IndexPage;

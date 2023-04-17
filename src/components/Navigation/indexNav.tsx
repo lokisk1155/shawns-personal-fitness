@@ -4,7 +4,7 @@ import NavLinks from "./NavLinks";
 import useMediaQuery from "../../utils/useMediaQuery";
 import MobileNav from "./MobileNav";
 
-const IndexNav: React.FC<PageProps> = () => {
+const Navigation: React.FC<PageProps> = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
 
   if (isAboveMediumScreens) {
@@ -14,6 +14,6 @@ const IndexNav: React.FC<PageProps> = () => {
   }
 };
 
-export default IndexNav;
+export default Navigation;
 
 export const Head: HeadFC = () => <title>Shawns Personal Fitness</title>;
