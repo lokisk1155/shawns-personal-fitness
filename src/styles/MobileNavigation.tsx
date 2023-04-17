@@ -22,6 +22,7 @@ export const MobileLinksContainer: CSSProperties = {
   flexDirection: "column",
   justifyContent: "space-evenly",
   alignItems: "center",
+  zIndex: 1,
 };
 
 export const MobileLink: CSSProperties = {
@@ -30,4 +31,13 @@ export const MobileLink: CSSProperties = {
   textDecoration: "none",
   fontSize: "1.25rem",
   color: "inherit",
+};
+
+export const MobileNavigationContainer: CSSProperties = {
+  width: "100%",
+  position: "absolute",
+  top: "0",
+  right: "0",
+  zIndex: 1,
+  backgroundColor: "#fff",
 };

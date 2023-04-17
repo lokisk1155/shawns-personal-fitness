@@ -5,12 +5,13 @@ import {
   mainLink,
   celebrationBannerHeader,
   celebrationText,
+  NavigationContainer,
 } from "../../styles/Header";
 import { Link } from "gatsby";
 
 const NavLinks: React.FC = () => {
   return (
-    <>
+    <div style={NavigationContainer}>
       <header style={celebrationBannerHeader}>
         <h1 style={celebrationText}>
           Celebrating 25 years of Shawn's Personal Fitness
@@ -23,7 +24,7 @@ const NavLinks: React.FC = () => {
           </Link>
         ))}
       </nav>
-    </>
+    </div>
   );
 };
 

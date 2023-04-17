@@ -5,7 +5,7 @@ export const mainLinksHeaderContainer: CSSProperties = {
   display: "flex",
   flexDirection: "row",
   justifyContent: "space-evenly",
-  border: "1px solid black",
+  borderBottom: "1px solid black",
 };
 
 export const mainLink: CSSProperties = {
@@ -15,7 +15,6 @@ export const mainLink: CSSProperties = {
   textDecoration: "none",
   fontSize: "1.25rem",
   color: "inherit",
-  border: "0.15px solid #fff",
   backgroundColor: "#fff",
 };
 
@@ -32,4 +31,11 @@ export const celebrationText: CSSProperties = {
   padding: "0",
   fontSize: "1.75rem",
   color: "whitesmoke",
+};
+
+export const NavigationContainer: CSSProperties = {
+  width: "100%",
+  position: "absolute",
+  top: "0",
+  right: "0",
 };

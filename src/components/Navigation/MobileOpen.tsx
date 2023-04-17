@@ -7,6 +7,7 @@ import {
   HeaderText,
   MobileLinksContainer,
   MobileLink,
+  MobileNavigationContainer,
 } from "../../styles/MobileNavigation";
 
 interface MobileOpenProps {
@@ -22,7 +23,7 @@ const MobileOpen: React.FC<MobileOpenProps> = ({ closeNav }) => {
   };
 
   return (
-    <>
+    <div style={MobileNavigationContainer}>
       <header style={HeaderContainer} onClick={closeNavigation}>
         <h1 style={HeaderText}>Shawn's Personal Fitness</h1>
         <NavCloseSvg />
@@ -34,7 +35,7 @@ const MobileOpen: React.FC<MobileOpenProps> = ({ closeNav }) => {
           </Link>
         ))}
       </nav>
-    </>
+    </div>
   );
 };
 

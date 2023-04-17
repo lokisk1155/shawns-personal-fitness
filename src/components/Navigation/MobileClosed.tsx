@@ -1,5 +1,9 @@
 import * as React from "react";
-import { HeaderContainer, HeaderText } from "../../styles/MobileNavigation";
+import {
+  HeaderContainer,
+  HeaderText,
+  MobileNavigationContainer,
+} from "../../styles/MobileNavigation";
 import NavSvg from "../svg/NavSvg";
 
 interface MobileClosedProps {
@@ -15,10 +19,12 @@ const MobileClosed: React.FC<MobileClosedProps> = ({ openNav }) => {
   };
 
   return (
-    <header style={HeaderContainer} onClick={openNavigation}>
-      <h1 style={HeaderText}>Shawn's Personal Fitness</h1>
-      <NavSvg />
-    </header>
+    <div style={MobileNavigationContainer}>
+      <header style={HeaderContainer} onClick={openNavigation}>
+        <h1 style={HeaderText}>Shawn's Personal Fitness</h1>
+        <NavSvg />
+      </header>
+    </div>
   );
 };
 
