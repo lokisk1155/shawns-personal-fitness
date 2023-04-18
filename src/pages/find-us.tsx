@@ -17,6 +17,4 @@ const FindUsPage: React.FC<PageProps> = () => {
 
 export default FindUsPage;
 
-export const Head: HeadFC = () => (
-  <title>Personal training in Westchester</title>
-);
+export const Head: HeadFC = () => <title>Training studio in Westchester</title>;

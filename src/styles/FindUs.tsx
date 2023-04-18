@@ -1,7 +1,9 @@
 import { CSSProperties } from "react";
 
 export const mainContainer: CSSProperties = {
-  marginTop: "130px",
+  position: "absolute",
+  top: "0",
+  right: "0",
   width: "100vw",
-  height: "80vh",
+  height: "100vh",
 };
