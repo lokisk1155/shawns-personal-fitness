@@ -17,7 +17,7 @@ const config: GatsbyConfig = {
     {
       resolve: "gatsby-plugin-env-variables",
       options: {
-        allowList: ["GOOGLE_MAPS_API_KEY"],
+        allowList: ["GATSBY_GOOGLE_MAPS_API_KEY"],
       },
     },
   ],
