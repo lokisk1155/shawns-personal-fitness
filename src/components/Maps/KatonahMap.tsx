@@ -4,7 +4,7 @@ import { KatonahMapStyles } from "../../styles/Maps";
 
 const KatonahMap: React.FC = () => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: `${process.env.GOOGLE_MAPS_API_KEY}`,
+    googleMapsApiKey: `${process.env.GATSBY_GOOGLE_MAPS_API_KEY}`,
   });
   const mapRef = useRef<google.maps.Map | null>(null);
   const centerMap = useMemo(() => ({ lat: 41.2587, lng: -73.6854 }), []);
