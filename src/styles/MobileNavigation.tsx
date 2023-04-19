@@ -38,6 +38,6 @@ export const MobileNavigationContainer: CSSProperties = {
   position: "absolute",
   top: "0",
   right: "0",
-  zIndex: 1,
+  zIndex: 3,
   backgroundColor: "#fff",
 };
