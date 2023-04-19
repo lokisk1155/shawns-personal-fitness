@@ -4,7 +4,7 @@ name: Node.js CI
 
 on:
   push:
-    branches: ["main"]
+    branches: ["main", "github-action-mods"]
   pull_request:
     branches: ["main"]
 
@@ -38,3 +38,5 @@ jobs:
           access-token: ${{ secrets.DEPLOY_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
+          env:
+            GATSBY_GOOGLE_MAPS_API_KEY: ${{ secrets.GATSBY_GOOGLE_MAPS_API_KEY }}
