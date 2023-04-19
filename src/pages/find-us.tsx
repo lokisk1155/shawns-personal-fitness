@@ -3,6 +3,7 @@ import type { HeadFC, PageProps } from "gatsby";
 import Navigation from "../components/Navigation/indexNav";
 import KatonahMap from "../components/Maps/KatonahMap";
 import { mainContainer } from "../styles/FindUs";
+import KatonahInfo from "../components/Maps/KatonahInfo";
 
 const FindUsPage: React.FC<PageProps> = () => {
   return (
@@ -10,6 +11,7 @@ const FindUsPage: React.FC<PageProps> = () => {
       <Navigation />
       <main style={mainContainer}>
         <KatonahMap />
+        <KatonahInfo />
       </main>
     </>
   );
