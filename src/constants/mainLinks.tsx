@@ -31,9 +31,9 @@ export const MainLinks: MainLink[] = [
     targetSegment: "community",
   },
   {
-    name: "Contact",
-    linkTo: "/contact",
-    targetSegment: "contact",
+    name: "Schedule",
+    linkTo: "/schedule",
+    targetSegment: "schedule",
   },
   {
     name: "Find Us",

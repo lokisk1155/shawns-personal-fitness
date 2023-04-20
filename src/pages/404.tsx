@@ -5,11 +5,11 @@ import Navigation from "../components/Navigation/indexNav";
 
 const NotFoundPage: React.FC<PageProps> = () => {
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
+    const countDownToRedirect = setTimeout(() => {
       navigate("/");
     }, 10000);
 
-    return () => clearTimeout(timeoutId);
+    return () => clearTimeout(countDownToRedirect);
   }, []);
 
   return (
