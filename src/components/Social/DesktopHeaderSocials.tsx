@@ -1,6 +1,6 @@
 import * as React from "react";
 import facebook from "../../assets/fb.jpg";
-import instagram from "../../assets/instagram.jpg";
+import instagram from "../../assets/ig.jpg";
 
 const DtHeaderSocialLinks: React.FC = () => {
   return (
@@ -28,7 +28,7 @@ const DtHeaderSocialLinks: React.FC = () => {
             height: "35px",
             width: "35px",
             backgroundColor: "transparent",
-            borderRadius: "10px",
+            borderRadius: "50%",
             margin: "auto",
             padding: "1px",
           }}
