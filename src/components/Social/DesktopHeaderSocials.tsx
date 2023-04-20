@@ -1,5 +1,5 @@
 import * as React from "react";
-import facebook from "../../assets/facebook.png";
+import facebook from "../../assets/fb.jpg";
 import instagram from "../../assets/instagram.jpg";
 
 const DtHeaderSocialLinks: React.FC = () => {
