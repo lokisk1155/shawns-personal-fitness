@@ -30,6 +30,6 @@ export const Head: HeadFC = () => (
       name="description"
       content="Find Shawn's Personal Fitness at 223 Katonah Avenue, Katonah, NY 10536. Locate us on Google Maps and get directions to our state-of-the-art training studio in Westchester."
     />
-    <link rel="canonical" href={`${window.location.origin}/find-us`} />
+    {/* <link rel="canonical" href={`${window.location.origin}/find-us`} /> */}
   </>
 );
