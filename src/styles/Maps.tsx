@@ -7,3 +7,22 @@ export const KatonahMapStyles: CSSProperties = {
   height: "100%",
   width: "100%",
 };
+
+export const KatonahInfoContainer: CSSProperties = {
+  zIndex: 1,
+  marginLeft: "3vw",
+  height: "300px",
+  width: "250px",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  backgroundColor: "#fff",
+  borderRadius: "3px",
+  boxShadow: "0px 0px 10px rgba(0, 0, 0, 0.2), 0px 8px 12px rgba(0, 0, 0, 0.1)",
+};
+
+export const BuisnessInfoContainer: CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+};
