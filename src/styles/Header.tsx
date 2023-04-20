@@ -6,6 +6,7 @@ export const mainLinksHeaderContainer: CSSProperties = {
   flexDirection: "row",
   justifyContent: "space-evenly",
   borderBottom: "1px solid black",
+  borderTop: "1px solid black",
   backgroundColor: "#fff",
 };
 
@@ -19,6 +20,7 @@ export const mainLink: CSSProperties = {
 };
 
 export const celebrationBannerHeader: CSSProperties = {
+  position: "relative",
   height: "65px",
   display: "flex",
   justifyContent: "center",

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 import { MainLinks } from "../../constants/mainLinks";
 import {
   mainLinksHeaderContainer,
@@ -7,15 +8,16 @@ import {
   celebrationText,
   NavigationContainer,
 } from "../../styles/Header";
-import { Link } from "gatsby";
+import DtHeaderSocialLinks from "../Social/DesktopHeaderSocials";
 
 const NavLinks: React.FC = () => {
   return (
     <div style={NavigationContainer}>
       <header style={celebrationBannerHeader}>
         <h1 style={celebrationText}>
-          Celebrating 25 years of Shawn's Personal Fitness
+          Celebrating 29 years of Shawn's Personal Fitness
         </h1>
+        <DtHeaderSocialLinks />
       </header>
       <nav style={mainLinksHeaderContainer}>
         {MainLinks.map((link) => (
