@@ -11,7 +11,7 @@ const MinimizeExpandKMap: React.FC<MinimizeExpandKMapProps> = ({
   setCardState,
 }) => {
   const handleMinimizeExpandKMap = (): void => {
-    // Toggle the cardState value
+    // Toggle expand or minimize
     setCardState(!cardState);
   };
 

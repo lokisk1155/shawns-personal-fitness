@@ -11,11 +11,6 @@ export const MainLinks: MainLink[] = [
     targetSegment: null,
   },
   {
-    name: "About",
-    linkTo: "/about",
-    targetSegment: "about",
-  },
-  {
     name: "Training",
     linkTo: "/training",
     targetSegment: "training",
@@ -26,14 +21,19 @@ export const MainLinks: MainLink[] = [
     targetSegment: "clients",
   },
   {
+    name: "Schedule",
+    linkTo: "/schedule",
+    targetSegment: "schedule",
+  },
+  {
     name: "Community",
     linkTo: "/community",
     targetSegment: "community",
   },
   {
-    name: "Schedule",
-    linkTo: "/schedule",
-    targetSegment: "schedule",
+    name: "About",
+    linkTo: "/about",
+    targetSegment: "about",
   },
   {
     name: "Find Us",
