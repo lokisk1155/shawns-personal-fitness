@@ -9,6 +9,8 @@ import {
   MobileLink,
   MobileNavigationContainer,
 } from "../../styles/MobileNavigation";
+import DtHeaderSocialLinks from "../Social/DesktopHeaderSocials";
+import MobileSocials from "../Social/MobileSocials";
 
 interface MobileOpenProps {
   closeNav: () => void;
@@ -34,6 +36,7 @@ const MobileOpen: React.FC<MobileOpenProps> = ({ closeNav }) => {
             <p>{link.name}</p>
           </Link>
         ))}
+        <MobileSocials />
       </nav>
     </div>
   );
