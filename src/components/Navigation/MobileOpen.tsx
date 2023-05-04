@@ -9,7 +9,6 @@ import {
   MobileLink,
   MobileNavigationContainer,
 } from "../../styles/MobileNavigation";
-import DtHeaderSocialLinks from "../Social/DesktopHeaderSocials";
 import MobileSocials from "../Social/MobileSocials";
 
 interface MobileOpenProps {
