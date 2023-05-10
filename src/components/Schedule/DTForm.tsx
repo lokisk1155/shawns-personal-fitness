@@ -1,5 +1,4 @@
 import * as React from "react";
-import { formDataToObject } from "./utils/formDataToObj";
 import SubmitSchedule from "../Buttons/SubmitSchedule";
 import {
   DTContainerStyles,
