@@ -45,13 +45,12 @@ export const FormStyles: CSSProperties = {
   backgroundColor: "#fff",
 };
 
-
 export const DTContainerStyles: CSSProperties = {
-display: "flex",
-flexDirection: "column",
-justifyContent: "center",
-alignItems: "center",
-backgroundColor: "#fff",
-height: "500px",
-width: "500px",
-}
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  backgroundColor: "#fff",
+  height: "500px",
+  width: "500px",
+};

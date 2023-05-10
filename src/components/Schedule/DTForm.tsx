@@ -21,9 +21,7 @@ const DTForm: React.FC = () => {
   };
 
   return (
-    <div
-      style={DTContainerStyles}
-    >
+    <div style={DTContainerStyles}>
       <form ref={formRef} onChange={handleFormChange} style={FormStyles}>
         <div style={NameContainerStyles}>
           <input
