@@ -52,4 +52,5 @@ export const DTContainerStyles: CSSProperties = {
   backgroundColor: "#fff",
   height: "500px",
   width: "500px",
+  marginTop: "50px"
 };
