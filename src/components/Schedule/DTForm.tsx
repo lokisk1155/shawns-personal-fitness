@@ -5,6 +5,14 @@ import SubmitSchedule from "../Buttons/SubmitSchedule";
 const DTForm: React.FC = () => {
   const formRef = React.useRef<HTMLFormElement>(null);
 
+  const [isFormValid, setIsFormValid] = React.useState(false);
+
+  const handleFormChange = () => {
+    if (formRef.current) {
+      setIsFormValid(formRef.current.checkValidity());
+    }
+  };
+
   return (
     <div
       style={{
@@ -19,6 +27,7 @@ const DTForm: React.FC = () => {
     >
       <form
         ref={formRef}
+        onChange={handleFormChange}
         style={{
           display: "flex",
           flexDirection: "column",
@@ -77,7 +86,7 @@ const DTForm: React.FC = () => {
           name="address"
           required
         />
-        <SubmitSchedule formRef={formRef} />
+        <SubmitSchedule formRef={formRef} isFormValid={isFormValid} />
       </form>
     </div>
   );
