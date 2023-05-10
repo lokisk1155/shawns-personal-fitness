@@ -16,18 +16,7 @@ const DTForm: React.FC = () => {
       body: JSON.stringify(formDataToObject(formData)),
     };
 
-    try {
-      const response = await fetch('https://email-server-shawns-fitness.herokuapp.com/send-email', requestOptions);
-      const data = await response.json();
-
-      if (response.ok) {
-        console.log(data.message); // "Email sent successfully"
-      } else {
-        console.error('Error sending email:', data.message); // "Failed to send email"
-      }
-    } catch (error) {
-      console.error('Error:', error);
-    }
+    await fetch('https://email-server-shawns-fitness.herokuapp.com/send-email', requestOptions);
   };
 
   return (
