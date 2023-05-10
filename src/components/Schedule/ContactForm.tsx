@@ -4,7 +4,7 @@ import DTForm from "./DTForm";
 import MobileForm from "./MobileForm";
 
 const ContactForm: React.FC = () => {
-  const isAboveMediumScreens = useMediaQuery("(min-width:1060px)");
+  const isAboveMediumScreens = useMediaQuery("(min-width:600px)");
 
   if (isAboveMediumScreens) {
     return <DTForm />;

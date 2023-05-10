@@ -6,14 +6,12 @@ export const MainStyles: CSSProperties = {
   left: "0",
   display: "flex",
   justifyContent: "center",
-  alignItems: "center",
   minHeight: "100vh",
   width: "100vw",
   backgroundColor: "#1B74E4",
 };
 
 export const SubmitFormStyles: CSSProperties = {
-  width: "81.5%",
   alignSelf: "center",
   height: "35px",
   border: "none",
@@ -27,6 +25,7 @@ export const InputStyles: CSSProperties = {
 
 export const NameStyles: CSSProperties = {
   height: "35px",
+  alignSelf: "center",
 };
 
 export const NameContainerStyles: CSSProperties = {
@@ -53,4 +52,47 @@ export const DTContainerStyles: CSSProperties = {
   backgroundColor: "#fff",
   height: "500px",
   width: "500px",
+  marginTop: "50px",
+};
+
+export const MobileSubmitFormStyles: CSSProperties = {
+  width: "100%",
+  alignSelf: "center",
+  height: "35px",
+  border: "none",
+};
+
+export const MobileInputStyles: CSSProperties = {
+  width: "98%",
+  alignSelf: "center",
+  height: "35px",
+};
+
+export const MobileNameStyles: CSSProperties = {
+  height: "35px",
+  width: "49%",
+};
+
+export const MobileNameContainerStyles: CSSProperties = {
+  width: "100%",
+  display: "flex",
+  justifyContent: "space-evenly",
+};
+
+export const MobileFormStyles: CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-between",
+  height: "100%",
+  width: "100%",
+};
+
+export const MobileContainerStyles: CSSProperties = {
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  width: "80%",
+  height: "400px",
+  marginTop: "50px",
 };
