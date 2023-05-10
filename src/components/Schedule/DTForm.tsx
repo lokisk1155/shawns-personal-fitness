@@ -1,4 +1,5 @@
 import * as React from "react";
+import { formDataToObject } from "./utils/formDataToObj";
 
 const DTForm: React.FC = () => {
   const formRef = React.useRef<HTMLFormElement>(null);
@@ -12,7 +13,7 @@ const DTForm: React.FC = () => {
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(Object.fromEntries(formData)),
+      body: JSON.stringify(formDataToObject(formData)),
     };
 
     try {
