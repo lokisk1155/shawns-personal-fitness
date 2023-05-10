@@ -9,5 +9,5 @@ export const MainStyles: CSSProperties = {
   alignItems: "center",
   minHeight: "100vh",
   width: "100vw",
-  backgroundColor: "#1B74E4"
+  backgroundColor: "#1B74E4",
 };
