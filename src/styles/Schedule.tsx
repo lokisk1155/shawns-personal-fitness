@@ -6,7 +6,6 @@ export const MainStyles: CSSProperties = {
   left: "0",
   display: "flex",
   justifyContent: "center",
-  alignItems: "center",
   minHeight: "100vh",
   width: "100vw",
   backgroundColor: "#1B74E4",
