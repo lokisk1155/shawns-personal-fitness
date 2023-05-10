@@ -12,20 +12,20 @@ export const MainStyles: CSSProperties = {
 };
 
 export const SubmitFormStyles: CSSProperties = {
-  width: "100%",
   alignSelf: "center",
   height: "35px",
   border: "none",
 };
 
 export const InputStyles: CSSProperties = {
-  width: "100%",
+  width: "81.5%",
   alignSelf: "center",
   height: "35px",
 };
 
 export const NameStyles: CSSProperties = {
   height: "35px",
+  alignSelf: "center",
 };
 
 export const NameContainerStyles: CSSProperties = {
@@ -70,6 +70,7 @@ export const MobileInputStyles: CSSProperties = {
 
 export const MobileNameStyles: CSSProperties = {
   height: "35px",
+  width: "49%",
 };
 
 export const MobileNameContainerStyles: CSSProperties = {

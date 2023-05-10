@@ -1,6 +1,7 @@
 import * as React from "react";
 import { formDataToObject } from "../../components/Schedule/utils/formDataToObj";
 import { SubmitFormStyles } from "../../styles/Schedule";
+import useMediaQuery from "../../utils/useMediaQuery";
 
 interface SubmitScheduleProps {
   formRef: React.RefObject<HTMLFormElement>;
@@ -11,6 +12,8 @@ const SubmitSchedule: React.FC<SubmitScheduleProps> = ({
   formRef,
   isFormValid,
 }) => {
+  const isAboveMediumScreens = useMediaQuery("(min-width:600px)");
+
   const handleCopyInfoButton = async (
     e: React.MouseEvent<HTMLButtonElement>
   ): Promise<void> => {
@@ -48,6 +51,7 @@ const SubmitSchedule: React.FC<SubmitScheduleProps> = ({
       id="Submit-Inquire-Button"
       style={{
         backgroundColor: isFormValid ? "lightgreen" : "whitesmoke",
+        width: isAboveMediumScreens ? "81.5%" : "100%",
         ...SubmitFormStyles,
       }}
       onClick={handleCopyInfoButton}
