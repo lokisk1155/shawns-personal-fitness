@@ -2,11 +2,11 @@ import * as React from "react";
 import { formDataToObject } from "./utils/formDataToObj";
 import SubmitSchedule from "../Buttons/SubmitSchedule";
 import {
-  DTContainerStyles,
-  FormStyles,
-  InputStyles,
-  NameContainerStyles,
-  NameStyles,
+  MobileContainerStyles,
+  MobileFormStyles,
+  MobileInputStyles,
+  MobileNameContainerStyles,
+  MobileNameStyles,
 } from "../../styles/Schedule";
 
 const MobileForm: React.FC = () => {
@@ -21,10 +21,11 @@ const MobileForm: React.FC = () => {
   };
 
   return (
-      <form ref={formRef} onChange={handleFormChange} style={{ display: "flex", flexDirection: "column", height: "60vh", width: "100vw", justifyContent: "space-between" }}>
-        <div style={NameContainerStyles}>
+    <div style={MobileContainerStyles}>
+      <form ref={formRef} onChange={handleFormChange} style={MobileFormStyles}>
+        <div style={MobileNameContainerStyles}>
           <input
-            style={NameStyles}
+            style={MobileNameStyles}
             placeholder="First"
             type="text"
             id="firstName"
@@ -32,7 +33,7 @@ const MobileForm: React.FC = () => {
             required
           />
           <input
-            style={NameStyles}
+            style={MobileNameStyles}
             placeholder="Last"
             type="text"
             id="lastName"
@@ -41,7 +42,7 @@ const MobileForm: React.FC = () => {
           />
         </div>
         <input
-          style={InputStyles}
+          style={MobileInputStyles}
           placeholder="email"
           type="email"
           id="email"
@@ -49,7 +50,7 @@ const MobileForm: React.FC = () => {
           required
         />
         <input
-          style={InputStyles}
+          style={MobileInputStyles}
           placeholder="phone number"
           type="tel"
           id="phoneNumber"
@@ -57,7 +58,7 @@ const MobileForm: React.FC = () => {
           required
         />
         <input
-          style={InputStyles}
+          style={MobileInputStyles}
           placeholder="address"
           type="text"
           id="address"
@@ -66,6 +67,7 @@ const MobileForm: React.FC = () => {
         />
         <SubmitSchedule formRef={formRef} isFormValid={isFormValid} />
       </form>
+    </div>
   );
 };
 
