@@ -49,7 +49,7 @@ const SubmitSchedule: React.FC<SubmitScheduleProps> = ({
         width: "81.5%",
         alignSelf: "center",
         height: "35px",
-        backgroundColor: "whitesmoke",
+        backgroundColor: isFormValid ? "lightgreen" : "whitesmoke",
         border: "none",
       }}
       onClick={handleCopyInfoButton}
