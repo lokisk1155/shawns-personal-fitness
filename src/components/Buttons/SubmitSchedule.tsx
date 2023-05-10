@@ -1,5 +1,6 @@
 import * as React from "react";
 import { formDataToObject } from "../../components/Schedule/utils/formDataToObj";
+import { SubmitFormStyles } from "../../styles/Schedule";
 
 interface SubmitScheduleProps {
   formRef: React.RefObject<HTMLFormElement>;
@@ -46,11 +47,8 @@ const SubmitSchedule: React.FC<SubmitScheduleProps> = ({
       type="submit"
       id="Submit-Inquire-Button"
       style={{
-        width: "81.5%",
-        alignSelf: "center",
-        height: "35px",
         backgroundColor: isFormValid ? "lightgreen" : "whitesmoke",
-        border: "none",
+        ...SubmitFormStyles,
       }}
       onClick={handleCopyInfoButton}
     >

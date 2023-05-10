@@ -1,6 +1,13 @@
 import * as React from "react";
 import { formDataToObject } from "./utils/formDataToObj";
 import SubmitSchedule from "../Buttons/SubmitSchedule";
+import {
+  DTContainerStyles,
+  FormStyles,
+  InputStyles,
+  NameContainerStyles,
+  NameStyles,
+} from "../../styles/Schedule";
 
 const DTForm: React.FC = () => {
   const formRef = React.useRef<HTMLFormElement>(null);
@@ -15,38 +22,12 @@ const DTForm: React.FC = () => {
 
   return (
     <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
-        backgroundColor: "#fff",
-        height: "500px",
-        width: "500px",
-      }}
+      style={DTContainerStyles}
     >
-      <form
-        ref={formRef}
-        onChange={handleFormChange}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "space-evenly",
-          height: "80%",
-          width: "80%",
-          border: "1px solid grey",
-          backgroundColor: "#fff",
-        }}
-      >
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "space-evenly",
-          }}
-        >
+      <form ref={formRef} onChange={handleFormChange} style={FormStyles}>
+        <div style={NameContainerStyles}>
           <input
-            style={{ height: "35px" }}
+            style={NameStyles}
             placeholder="First"
             type="text"
             id="firstName"
@@ -54,7 +35,7 @@ const DTForm: React.FC = () => {
             required
           />
           <input
-            style={{ height: "35px" }}
+            style={NameStyles}
             placeholder="Last"
             type="text"
             id="lastName"
@@ -63,7 +44,7 @@ const DTForm: React.FC = () => {
           />
         </div>
         <input
-          style={{ width: "81.5%", alignSelf: "center", height: "35px" }}
+          style={InputStyles}
           placeholder="email"
           type="email"
           id="email"
@@ -71,7 +52,7 @@ const DTForm: React.FC = () => {
           required
         />
         <input
-          style={{ width: "81.5%", alignSelf: "center", height: "35px" }}
+          style={InputStyles}
           placeholder="phone number"
           type="tel"
           id="phoneNumber"
@@ -79,7 +60,7 @@ const DTForm: React.FC = () => {
           required
         />
         <input
-          style={{ width: "81.5%", alignSelf: "center", height: "35px" }}
+          style={InputStyles}
           placeholder="address"
           type="text"
           id="address"
