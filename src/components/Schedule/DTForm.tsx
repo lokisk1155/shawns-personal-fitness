@@ -41,23 +41,58 @@ const DTForm: React.FC = () => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-evenly",
-          backgroundColor: "#fff",
           height: "80%",
           width: "80%",
           border: "1px solid grey",
+          backgroundColor: "#fff",
         }}
       >
-        <label htmlFor="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required />
-        <label htmlFor="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required />
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" required />
-        <label htmlFor="phoneNumber">Phone number:</label>
-        <input type="tel" id="phoneNumber" name="phoneNumber" required />
-        <label htmlFor="address">Address:</label>
-        <input type="text" id="address" name="address" required />
-        <label htmlFor="bestTimes">Best times to reach out:</label>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "space-evenly",
+          }}
+        >
+          <input
+            placeholder="First"
+            type="text"
+            id="firstName"
+            name="firstName"
+            required
+          />
+          <input
+            placeholder="Last"
+            type="text"
+            id="lastName"
+            name="lastName"
+            required
+          />
+        </div>
+        <input
+          placeholder="email"
+          type="email"
+          id="email"
+          name="email"
+          required
+        />
+        <input
+          placeholder="phone number"
+          type="tel"
+          id="phoneNumber"
+          name="phoneNumber"
+          required
+        />
+        <input
+          placeholder="address"
+          type="text"
+          id="address"
+          name="address"
+          required
+        />
+        <label style={{ paddingLeft: "33px" }} htmlFor="bestTimes">
+          Best times to reach out:
+        </label>
         <input type="text" id="bestTimes" name="bestTimes" required />
         <button type="submit">Submit</button>
       </form>
