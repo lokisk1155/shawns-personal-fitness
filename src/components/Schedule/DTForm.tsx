@@ -1,26 +1,9 @@
 import * as React from "react";
 import { formDataToObject } from "./utils/formDataToObj";
+import SubmitSchedule from "../Buttons/SubmitSchedule";
 
 const DTForm: React.FC = () => {
   const formRef = React.useRef<HTMLFormElement>(null);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    if (!formRef.current) return;
-
-    const formData = new FormData(formRef.current);
-    const requestOptions = {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formDataToObject(formData)),
-    };
-
-    await fetch(
-      "https://email-server-shawns-fitness.herokuapp.com/send-email",
-      requestOptions
-    );
-  };
 
   return (
     <div
@@ -36,7 +19,6 @@ const DTForm: React.FC = () => {
     >
       <form
         ref={formRef}
-        onSubmit={handleSubmit}
         style={{
           display: "flex",
           flexDirection: "column",
@@ -55,6 +37,7 @@ const DTForm: React.FC = () => {
           }}
         >
           <input
+            style={{ height: "35px" }}
             placeholder="First"
             type="text"
             id="firstName"
@@ -62,6 +45,7 @@ const DTForm: React.FC = () => {
             required
           />
           <input
+            style={{ height: "35px" }}
             placeholder="Last"
             type="text"
             id="lastName"
@@ -70,6 +54,7 @@ const DTForm: React.FC = () => {
           />
         </div>
         <input
+          style={{ width: "81.5%", alignSelf: "center", height: "35px" }}
           placeholder="email"
           type="email"
           id="email"
@@ -77,6 +62,7 @@ const DTForm: React.FC = () => {
           required
         />
         <input
+          style={{ width: "81.5%", alignSelf: "center", height: "35px" }}
           placeholder="phone number"
           type="tel"
           id="phoneNumber"
@@ -84,17 +70,14 @@ const DTForm: React.FC = () => {
           required
         />
         <input
+          style={{ width: "81.5%", alignSelf: "center", height: "35px" }}
           placeholder="address"
           type="text"
           id="address"
           name="address"
           required
         />
-        <label style={{ paddingLeft: "33px" }} htmlFor="bestTimes">
-          Best times to reach out:
-        </label>
-        <input type="text" id="bestTimes" name="bestTimes" required />
-        <button type="submit">Submit</button>
+        <SubmitSchedule formRef={formRef} />
       </form>
     </div>
   );
